@@ -1,0 +1,227 @@
+:root {
+	--fuente-principal: 'Mukta', sans-serif;
+	--bg-color: #fcfcfc;
+	--secondary-color: #fff;
+	--principal-text: #000;
+	--light-text: #333;
+	--detail-color: #05a548;
+}
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--fuente-principal);
+	background-color: var(--bg-color);
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+/*--- HEADER --- */
+.hero {
+	height: 100vh;
+	background-image: url(../Images/bg-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.hero .header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 4.375rem;
+	background-color: var(--secondary-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 25px;
+}
+
+.cart-icon i:hover {
+	color: var(--detail-color);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+/*---CONTENIDO-HERO---*/
+
+.contenido-hero {
+	margin: 0 auto;
+	position: relative;
+	top: 250px;
+	max-width: 800px;
+	display: grid;
+	grid-template-columns: 5% auto 5%;
+	grid-template-rows: max-content auto;
+}
+.contenido-hero h1 {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	text-align: center;
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.contenido-hero form {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	position: relative;
+	display: flex;
+	height: 4rem;
+}
+.contenido-hero form input[type='text'] {
+	flex: 1;
+	border-radius: 10px;
+	border: none;
+	background-image: url(../img/lupa.png);
+	background-repeat: no-repeat;
+	background-position: calc(1% + 1rem) calc(1% + 0.8rem);
+	padding-left: 5rem;
+	font-size: 1.6rem;
+}
+.contenido-hero form input[type='submit'] {
+	position: absolute;
+	right: 1rem;
+	top: 0.6rem;
+	background-color: var(--principal-text);
+	border: none;
+	padding: 0.7rem 2rem;
+	font-size: 1.2rem;
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+.contenido-hero form input[type='submit']:hover {
+	cursor: pointer;
+}
+
+/* --- BARRA ADVENTAGES --- */
+.ventajas {
+	width: 100%;
+	height: 5.625rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 25px;
+	text-align: center;
+	background: #111;
+	color: var(--secondary-color);
+}
+/*---CARRITO DE COMPRA---*/
+.cartDesign {
+	background: var(--bg-color);
+	position: fixed;
+	top: -100%;
+}
+
+.cart_visible {
+	top: 4.375rem;
+}
+
+a.empty-cart {
+	position: relative;
+	width: 90%;
+	text-decoration: none;
+	color: var(--principal-text);
+	display: block;
+	text-align: center;
+	border: 1px solid var(--principal-text);
+	border-radius: 5px;
+	margin: 10px auto;
+}
+
+a.empty-cart:hover {
+	background: #ec1b1b;
+	border-color: var(--bg-color);
+	color: var(--bg-color);
+}
+
+.cartDesign table {
+	width: 500px;
+	min-width: 300px;
+	height: 50vh;
+	padding: 0px 10px;
+	text-align: center;
+	font-size: 20px;
+}
+
+/*--- TARJETAS ---*/
+.products .contenedor-cards {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	max-width: 350px;
+	margin: 30px;
+	background: var(--secondary-color);
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 21px 17px 32px -12px rgba(9, 9, 9, 0.3);
+}
+
+.card img {
+	width: 100%;
+}
+
+.card .info {
+	padding: 15px 0;
+	margin: 0 20px;
+}
+
+.card h4 {
+	color: var(--detail-color);
+	font-size: 20px;
+}
+
+.card .autor {
+	color: var(--light-text);
+}
+
+.card .precio {
+	margin-top: 25px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.card a {
+	text-decoration: none;
+	display: block;
+	margin: 10px 0;
+	padding: 10px 0;
+	border: 2px solid #000;
+	border-radius: 5px;
+	text-align: center;
+	color: var(--principal-text);
+	font-weight: 400;
+	transition: all 0.2s;
+}
+
+.card a:hover {
+	background: #05a548;
+	color: var(--bg-color);
+	border-color: var(--bg-color);
+}
+
+.delete-card {
+	text-decoration: none;
+	color: var(--secondary-color);
+	background-color: #ec1b1b;
+	padding: 0px 10px;
+	border-radius: 25%;
+}
+
+.delete-card:hover {
+	background: #ad1414;
+}

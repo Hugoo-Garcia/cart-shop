@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============== ICONS =============== -->
+    <script src="https://kit.fontawesome.com/37367704b4.js" crossorigin="anonymous"></script>
+
+    <!-- =============== FONTS =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <!-- =============== CSS =============== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>NFT - Store</title>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <div class="hero">
+        <header class="header">
+            <div class="logo">
+                <p>NFT Store</p>
+            </div>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div id="cart" class="cartDesign">
+                <table id="cart-list">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <a href="#" id="empty-cart" class="empty-cart">Vaciar carrito</a>
+            </div>
+        </header>
+
+        <div class="contenido-hero">
+            <h1>New age art</h1>
+            <form action="/buscador" method="post" class="formulario formulario-buscar" id="formulario">
+                <input type="text" name="busqueda" class="busqueda" placeholder="Search +2,000 products">
+                <input type="submit" value="Go" id="btn-submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <main class="class contenedor">
+
+        <section class="ventajas">
+            <div class="ventaja">
+                <i class="fa-solid fa-bullseye"></i>
+                <h4>Choose it!</h4>
+            </div>
+            <div class="ventaja">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+                <h4>Buy it!</h4>
+            </div>
+            <div class="ventaja">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <h4>Sell it!</h4>
+            </div>
+        </section>
+
+        <Section class="products">
+
+            <div class="contenedor-cards" id="container-cards">
+                <div class="card">
+                    <img src="assets/Images/nft-1.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #1</h4>
+                        <p class="autor">John Doe</p>
+                        <p class="precio">$2,000</p>
+                        <a href="#" class="add-cart" data-id="1">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-2.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #2</h4>
+                        <p class="autor">Luke Nunez</p>
+                        <p class="precio">$3,760</p>
+                        <a href="#" class="add-cart" data-id="2">add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-3.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #3</h4>
+                        <p class="autor">Axel Jones</p>
+                        <p class="precio">$2,220</p>
+                        <a href="#" class="add-cart" data-id="3">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-4.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #4</h4>
+                        <p class="autor">Hughes R.</p>
+                        <p class="precio">$1,899</p>
+                        <a href="#" class="add-cart" data-id="4">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-5.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #5</h4>
+                        <p class="autor">Chris Bell</p>
+                        <p class="precio">$5,100</p>
+                        <a href="#" class="add-cart" data-id="5">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-6.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #6</h4>
+                        <p class="autor">Max Poe</p>
+                        <p class="precio">$1,999</p>
+                        <a href="#" class="add-cart" data-id="6">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-7.jpg
+                    " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #7</h4>
+                        <p class="autor">Roger M</p>
+                        <p class="precio">$2,599</p>
+                        <a href="#" class="add-cart" data-id="7">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-8.jpg
+                        " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #8</h4>
+                        <p class="autor">Steve W</p>
+                        <p class="precio">$4,000</p>
+                        <a href="#" class="add-cart" data-id="8">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/Images/nft-9.jpg
+                            " alt="" class="img-nft">
+                    <div class="info">
+                        <h4>NFT #9</h4>
+                        <p class="autor">Larry P</p>
+                        <p class="precio">$1,999</p>
+                        <a href="#" class="add-cart" data-id="9">Add to cart <i
+                                class="fa-solid fa-cart-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </Section>
+
+        <script src="assets/js/app.js"></script>
+    </main>
+
+
+</body>
+
+</html>
